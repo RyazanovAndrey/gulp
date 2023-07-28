@@ -40,6 +40,7 @@ function style() {
             errorHandler: notify.onError({
                 title: 'SCSS Error',
                 message: 'Error: <%= error.message %>',
+                sound: false,
             })
         }))
         .pipe(sourcemaps.init())
