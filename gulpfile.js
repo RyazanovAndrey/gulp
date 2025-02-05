@@ -29,7 +29,7 @@ const path = {
         html: './src/*.html',
         img: './src/image/**/*.{jpg,jpeg,png,webp}',
         fonts: './src/fonts/*.ttf',
-        libs: './src/**/*.*'
+        libs: './src/libs/**/*.*'
     },
     watch: {
         js: './src/js/**/*.js',
@@ -37,7 +37,7 @@ const path = {
         html: './src/**/*.html',
         image: './src/image/**/*.*',
         fonts: './src/fonts/**/*.*',
-        libs: './src/**/*.*'
+        libs: './src/libs/**/*.*'
     }
 }
 
