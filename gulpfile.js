@@ -24,7 +24,7 @@ const path = {
         libs: './dist/libs/'
     },
     src: {
-        js: './src/js/main.js',
+        js: './src/js/*.js',
         css: './src/scss/*.scss',
         html: './src/*.html',
         img: './src/image/**/*.{jpg,jpeg,png,webp}',
