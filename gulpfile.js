@@ -13,6 +13,7 @@ import imagemin, {mozjpeg} from 'gulp-imagemin'
 import {deleteAsync as del} from 'del'
 import fileinclude from 'gulp-file-include'
 import ttf2woff2 from 'gulp-ttf2woff2'
+import sourcemaps from 'gulp-sourcemaps'
 
 const path = {
     build: {
@@ -51,8 +52,10 @@ function js() {
 
 function style() {
     return gulp.src(path.src.css)
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.build.css))
     .pipe(browsersync.stream())
 }
